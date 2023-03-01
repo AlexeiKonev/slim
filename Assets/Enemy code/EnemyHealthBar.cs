@@ -14,6 +14,7 @@ namespace Slime {
             slider.value = health;
             slider.maxValue = maxHealth;
         }
+
     }
 
 }

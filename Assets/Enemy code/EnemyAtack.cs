@@ -9,7 +9,7 @@ namespace Slime {
         public LayerMask playerLayer; // слой игрока
 
         [SerializeField] private Transform player; // игрок
-        [SerializeField] private bool isAttacking = false; // флаг, показывающий, атакует ли враг сейчас
+        public bool isAttacking = false; // флаг, показывающий, атакует ли враг сейчас
         private float attackTime = 0f; // время последней атаки
 
         public SphereCollider enemyCollider;
