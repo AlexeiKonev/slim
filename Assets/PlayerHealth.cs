@@ -4,7 +4,7 @@ namespace Slime {
 
     public class PlayerHealth : MonoBehaviour {
         public int maxHealth = 100;
-        public int currentHealth;
+        public int currentHealth = 20;
 
         public HealthBar healthBar;
 
