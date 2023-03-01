@@ -36,6 +36,12 @@ namespace Slime {
                 }
             }
         }
+        void OnTriggerEnter(Collider other) {
+            if (other.CompareTag("Player")) {
+                animator.SetTrigger("Attack");  // Запустить анимацию атаки врага
+            }
+        }
+
 
         private void DealDamage() {
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, attackRange, playerLayer);
