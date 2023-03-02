@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 namespace Slime {
 
     public class EnemyHealth : MonoBehaviour {
@@ -15,6 +16,8 @@ namespace Slime {
         public CapsuleCollider capsuleCollider;             // Ссылка на компонент капсульного коллайдера
         bool isDead;                                // Логическое значение для проверки того, мертв ли враг
         bool isSinking;
+
+        public Action<GameObject> OnDeath { get; internal set; }
 
         void Awake() {
 
