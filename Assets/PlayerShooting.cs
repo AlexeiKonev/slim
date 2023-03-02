@@ -67,11 +67,11 @@ namespace Slime {
                 GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
 
                 // Вычисляем горизонтальную и вертикальную скорости на основе угла и скорости снаряда
-                float horizontalSpeed = projectileSpeed * Mathf.Cos(launchAngle * Mathf.Deg2Rad);
-                float verticalSpeed = projectileSpeed * Mathf.Sin(launchAngle * Mathf.Deg2Rad);
+                //float horizontalSpeed = projectileSpeed * Mathf.Cos(launchAngle * Mathf.Deg2Rad);
+                //float verticalSpeed = projectileSpeed * Mathf.Sin(launchAngle * Mathf.Deg2Rad);
 
                 // Задаем начальную скорость снаряда
-                projectile.GetComponent<Rigidbody>().velocity = new Vector3(horizontalSpeed, verticalSpeed, 0);
+                //projectile.GetComponent<Rigidbody>().velocity = new Vector3(horizontalSpeed, verticalSpeed, 0);
             }
 
         }
