@@ -306,7 +306,6 @@ GameObject:
   - component: {fileID: 336960244}
   - component: {fileID: 336960243}
   - component: {fileID: 336960242}
-  - component: {fileID: 336960245}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -397,19 +396,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &336960245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336960240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f424bc93880a904d9a2ae3b286141e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1220248653}
 --- !u!1 &376049818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1220248652}
+  - component: {fileID: 1220248654}
   - component: {fileID: 1220248653}
   m_Layer: 0
   m_Name: healthBar
@@ -1869,6 +1856,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1220248654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220248651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7430e7e6d80489041b4df71f385191eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1220248653}
+  targetTransform: {fileID: 1902979986}
+  offset: {x: 0, y: 0.65, z: 0}
 --- !u!1001 &1281978446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2168,6 +2170,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300036, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3246224815721287020, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
       propertyPath: m_Name
       value: Button (Legacy) (1)
@@ -3767,6 +3781,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300034, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093846905665986177, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3246224815721287020, guid: 13c95664f35821d43a13cafdc7296e08, type: 3}
       propertyPath: m_Name
       value: Button (Legacy)
