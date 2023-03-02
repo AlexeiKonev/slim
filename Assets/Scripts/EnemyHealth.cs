@@ -35,20 +35,20 @@ namespace Slime {
             }
         }
 
-        public void TakeDamage(int damageAmount, Vector3 hitPoint) {
+        public void TakeDamage(int damageAmount) {
             // Check if the enemy is dead
             if (isDead)
                 return;
 
             // Play the hit particles at the hit point
-            hitParticles.transform.position = hitPoint;
-            hitParticles.Play();
+            //hitParticles.transform.position = hitPoint;
+            //hitParticles.Play();
 
             // Subtract the amount of damage from the current health
             currentHealth -= damageAmount;
 
             // Play the enemy hurt sound
-            enemyAudio.Play();
+            //enemyAudio.Play();
 
             // Check if the enemy is dead
             if (currentHealth <= 0) {

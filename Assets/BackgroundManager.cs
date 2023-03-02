@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Slime {
 public class BackgroundManager : MonoBehaviour {
     public Transform player;
     public SpriteRenderer background;
@@ -29,3 +29,5 @@ public class BackgroundManager : MonoBehaviour {
         }
     }
 }
+}
+
