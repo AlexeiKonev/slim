@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour {
+    
     public GameObject[] enemyPrefabs;
     public int numEnemies;
     public float spawnRadius;
     public float spawnDelay;
 
-    private int enemiesRemaining;
-    private bool isGeneratingEnemies;
+    public int enemiesRemaining;
+    public bool isGeneratingEnemies;
 
     void Start() {
         isGeneratingEnemies = false;

@@ -92,5 +92,5 @@ namespace Slime {
             Destroy(gameObject, 2f);
         }
     }
-
+ 
 }

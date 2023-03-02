@@ -6,21 +6,22 @@ namespace Slime {
         public float stoppingDistance = 2f;
         public Animator animator;
 
-        private Transform target;
-        private bool isMoving = false;
+      [SerializeField]  private Transform target;
+        public bool isMoving = true;
 
         void Start() {
-            target = GameObject.FindGameObjectWithTag("Enemy").transform;
+            target = GameObject.FindGameObjectWithTag("stop").transform;
         }
 
         void Update() {
-            if (Vector3.Distance(transform.position, target.position) > stoppingDistance) {
+
+            if (isMoving) {
                 transform.position += transform.forward * speed * Time.deltaTime;
-                animator.SetBool("isMoving", true);
-                isMoving = true;
+                //animator.SetBool("isMoving", true);
+                //isMoving = true;
             }
             else {
-                animator.SetBool("isMoving", false);
+                //animator.SetBool("isMoving", false);
                 isMoving = false;
             }
         }
